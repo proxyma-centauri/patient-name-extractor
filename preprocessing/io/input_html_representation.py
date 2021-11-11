@@ -1,4 +1,3 @@
-from preprocessing.html_to_object.html_to_object import get_page_object 
 
 def input_html_representation(file_name: str):
     """
@@ -6,4 +5,4 @@ def input_html_representation(file_name: str):
     """
     with open(file_name, 'r') as f:   
         data = f.read()
-        return(get_page_object(data))
+        return(data)
