@@ -53,7 +53,7 @@ def main(args):
             
             # Birth date intuition → Measure distance from closest date 
             distance_to_closest_date = get_distance_to_closest_date(entity_loc, dates_locs)
-            
+
             # “Not a doctor” → Non-association with medical titles (Dr, Pr, etc), either distance or categorical from threshold
             association_to_medical_title = get_association_with_medical_title(person, closest_words)
 
@@ -113,7 +113,7 @@ if __name__ == "__main__":
                                     cast=str)
 
     args["FEATURES_DATA_FOLDER"] = config("FEATURES_DATA_FOLDER",
-                                    default="./data/features",
+                                    default="./data/features/",
                                     cast=str) 
 
     args["TRAINING"] = config("TRAINING",

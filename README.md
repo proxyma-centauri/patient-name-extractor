@@ -16,4 +16,4 @@ pip install -r requirements.txt
 
 Make a copy of `.env.template` and rename it to `.env`. Change the variable values to your liking if needed.
 
-## Use
+## Usage
