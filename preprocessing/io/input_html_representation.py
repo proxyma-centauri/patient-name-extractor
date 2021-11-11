@@ -1,4 +1,4 @@
-from preprocessing.html_to_object import get_page_object 
+from preprocessing.html_to_object.html_to_object import get_page_object 
 
 def input_html_representation(file_name: str):
     """
