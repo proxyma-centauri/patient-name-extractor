@@ -75,6 +75,7 @@ def main(args):
                 "association_to_medical_title": association_to_medical_title,
                 "association_to_indicators": association_to_indicators,
                 "nb_occurences": nb_occurences,
+                "name_of_person_entity": person,
                 "document_path": file_name
             }
             data = data.append(new_row, ignore_index=True)
