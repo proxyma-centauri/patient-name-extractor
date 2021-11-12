@@ -3,6 +3,7 @@ from os.path import isfile, join
 
 from decouple import config
 from collections import Counter
+from pathlib import Path
 
 import pandas as pd
 
@@ -78,6 +79,7 @@ def main(args):
             }
             data = data.append(new_row, ignore_index=True)
 
+    Path(args["FEATURES_DATA_FOLDER"]).mkdir(parents=True, exist_ok=True)
     data.to_csv(args["FEATURES_DATA_FOLDER"] + 'features.csv')
 
     # After this point, only the architceture headlines are mentionned as TODO comments
